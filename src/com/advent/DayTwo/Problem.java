@@ -1,13 +1,11 @@
 package com.advent.DayTwo;
 
-import javax.xml.crypto.dsig.keyinfo.KeyValue;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.HashMap;
 import java.util.List;
 
-public class problem {
+public class Problem {
     public static String[] Passwords;
     public static PasswordPolicy[] Policies;
 
