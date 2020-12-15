@@ -2,7 +2,7 @@
 *.class
 
 # build directory
-*/out
+out/
 
 # Log file
 *.log
