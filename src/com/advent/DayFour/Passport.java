@@ -88,10 +88,7 @@ public class Passport {
             List<String> eyeColors = Arrays.asList("amb", "blu", "brn", "gry", "grn", "hzl", "oth");
             if (!eyeColors.contains(ECL)) return ResultCode.BadEyeColor;
 
-            if (PID.length() != 9) return ResultCode.BadPassportID;
-            int passId = Integer.parseInt(PID);
-            // if it can't parse, we throw, which gets caught and we return false;
-
+            if (!PID.matches("^[0-9]{9}$")) return ResultCode.BadPassportID;
         } catch (Exception e) {
             // don't care what kind of exception we get, it means the passport is invalid!
             return ResultCode.Exception;
